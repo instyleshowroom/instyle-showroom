@@ -7258,7 +7258,7 @@ h1 {
   transition: 0.2s ease-in; }
 
 #services-list li.active {
-  color: red;
+  color: #EDC1AE;
   transition: 0.2s ease-in; }
 
 #services-list li {
@@ -7561,7 +7561,10 @@ body {
   flex-wrap: nowrap; }
 
 .layout-slide img {
-  max-width: 550px; }
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 90%; }
 
 .horizontal-layout-container {
   overflow-x: auto;
