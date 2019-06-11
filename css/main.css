@@ -7373,8 +7373,6 @@ body {
   width: 100%; }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
   min-height: 100vh;
   overflow: hidden; }
@@ -7634,7 +7632,6 @@ body {
   .vertical-slider img {
     max-width: 275px; }
   .wrapper {
-    grid-template-columns: 1fr;
     overflow: auto;
     height: auto; }
   #left {
