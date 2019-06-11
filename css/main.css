@@ -7229,6 +7229,7 @@ label.panel-block {
     margin-top: 1em; } }
 
 body {
+  font-family: aktiv-grotesk, sans-serif;
   color: #000; }
 
 a {
@@ -7373,6 +7374,7 @@ body {
   width: 100%; }
 
 .wrapper {
+  width: 100%;
   min-height: 100vh;
   overflow: hidden; }
 
