@@ -7301,11 +7301,14 @@ body.preloader-site {
   text-transform: uppercase;
   margin: 0 auto; }
 
-.campaign-text {
+.campaign-text-home {
   font-weight: 300;
   position: absolute;
   top: 40px;
   right: 32px; }
+
+.campaign-text {
+  font-weight: 300; }
 
 .navigation-links a {
   margin-right: 30px; }
@@ -7634,7 +7637,7 @@ body {
   #brand-list {
     font-size: 28px;
     font-family: 'playfair display', serif; }
-  .navigation-links, .campaign-text {
+  .navigation-links, .campaign-text, .campaign-text-home {
     display: none; }
   .mobile-nav a.navbar-item {
     padding-left: 0; }

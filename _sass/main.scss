@@ -188,11 +188,15 @@ body.preloader-site {
   margin: 0 auto;
 }
 
-.campaign-text {
+.campaign-text-home {
   font-weight: 300;
   position: absolute;
   top: 40px;
   right: 32px;
+}
+
+.campaign-text {
+  font-weight: 300;
 }
 .navigation-links a{
   margin-right: 30px;
@@ -603,7 +607,7 @@ and (orientation : landscape) {
   }
 
 
-  .navigation-links, .campaign-text {
+  .navigation-links, .campaign-text, .campaign-text-home {
     display: none;
   }
 
