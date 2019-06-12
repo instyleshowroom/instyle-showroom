@@ -7561,7 +7561,7 @@ body {
   align-items: center;
   flex-wrap: nowrap; }
 
-.layout-slide img {
+.brand-pages-dx .layout-slide img {
   width: auto !important;
   height: auto !important;
   max-width: 120% !important;
