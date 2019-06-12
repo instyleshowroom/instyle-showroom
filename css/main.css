@@ -7255,7 +7255,7 @@ h1 {
   font-family: 'playfair display', serif; }
 
 .no-touch #brand-list .hover a {
-  color: red;
+  color: #EDC1AE;
   transition: 0.2s ease-in; }
 
 #services-list li.active {
@@ -7564,8 +7564,8 @@ body {
 .layout-slide img {
   width: auto;
   height: auto;
-  max-width: 100%;
-  max-height: 90%; }
+  max-width: 120%;
+  max-height: 120%; }
 
 .horizontal-layout-container {
   overflow-x: auto;
