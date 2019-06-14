@@ -7381,9 +7381,7 @@ body {
   width: 100%; }
 
 .wrapper {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 #left {
   scrollbar-width: none;
