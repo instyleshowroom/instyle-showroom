@@ -286,6 +286,10 @@ body {
   padding-bottom: 40px; 
 }
 
+#left .columns {
+  padding-left: 32px;
+}
+
 #left::-webkit-scrollbar { /* WebKit */
 width: 0;
 height: 0;
@@ -630,6 +634,19 @@ and (orientation : landscape) {
 
 @media only screen and (max-width: 768px) {
 
+  #about.columns{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+  #left .columns{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .p-l-xl, .p-l-lg{
     padding-left: 15px;
   }
@@ -663,8 +680,6 @@ and (orientation : landscape) {
   }
 
   #left {
-    padding-left: 15px;
-    padding-right: 15px;
     z-index: 0;
   }
 
