@@ -7299,7 +7299,11 @@ body.preloader-site {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0 auto; }
+  margin: 0 auto;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute; }
 
 .campaign-text-home {
   font-weight: 300;
