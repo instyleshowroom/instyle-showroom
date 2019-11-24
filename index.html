@@ -56,6 +56,32 @@
               <a class="nav-link" href="/#contact">Contact</a>
           </div>
 
+          <div
+        style="text-align: right; font-size: 16px;  align-self: baseline !important;">
+        <input id="collapsible" class="toggle" type="checkbox">
+        <label for="collapsible" class="lbl-toggle"><b>PRE-FW '20</b></label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>
+              Milan: January 14th - February 8th<br>  
+              Via Palermo, 16 20121 Milan<br><br>
+              Paris: January 17th - 22nd<br>
+              46, Rue du Vertbois. 75003 Paris 
+            </p>
+          </div>
+        </div>
+        <input id="collapsible2" class="toggle" type="checkbox">
+        <label for="collapsible2" class="lbl-toggle"><b>MAIN FW '20</b></label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            Milan: February 18th - March 15th <br> 
+            Via Palermo, 16 20121 Milan <br><br>
+            Paris: February 28th - March 4th <br>
+            Espace Commines - 17 Rue Commines. 75003 Paris
+          </div>
+        </div>
+      </div>
+
 
           <!-- <p id="campaign-text-long" class="campaign-text" style="text-align: right;  align-self: baseline !important;">
             <b>PRE SS 20</b><br>
@@ -74,12 +100,64 @@
         </div>
       </nav>
 
-      <p id="campaign-text-short" class="campaign-text-home"
-        style="text-align: right;  align-self: baseline !important;">
-        <b>PRE SS 20</b><br>
-        Milan - June 10th - July 12th <br>
-        Paris - June 21st - June 26th <br>
-      </p>
+      
+
+        <style>
+          input[type='checkbox'] {
+            display: none;
+          }
+
+          .lbl-toggle {
+            cursor: pointer;
+            -webkit-user-select: none; /* Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+          }
+
+          .lbl-toggle::after {
+            content: '+';
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(-2px);
+          
+            transition: transform .4s ease;
+          }
+
+          .toggle:checked + .lbl-toggle::after {
+            content: '-';
+          }
+
+          .collapsible-content {
+            max-height: 0px;
+            overflow: hidden;
+            font-size: 14px;
+          
+            transition: max-height .3s ease;
+          }
+
+          .toggle:checked + .lbl-toggle + .collapsible-content {
+            max-height: 200px;
+          }
+
+
+
+        </style>
+
+        <script>
+          let myLabels = document.querySelectorAll('.lbl-toggle');
+
+Array.from(myLabels).forEach(label => {
+  label.addEventListener('keydown', e => {
+    // 32 === spacebar
+    // 13 === enter
+    if (e.which === 32 || e.which === 13) {
+      e.preventDefault();
+      label.click();
+    };
+  });
+});
+        </script>
 
 
       <nav class="navbar-menu mobile-nav" id="MobileNav">
@@ -90,9 +168,12 @@
         <a class="navbar-item" href="/#contact">CONTACT</a>
         <p class="has-text-black p-b-lg has-text-left is-size-6 is-font-weight-medium"
           style="bottom: 0; position: absolute;">
-          <b>PRE SS 20</b><br>
-          Milano - June 10th - July 12th <br>
-          Paris - June 21st - June 26th <br>
+          <b>PRE-FW '20</b><br>
+          Milan: January 14th - February 8th<br>
+          Via Palermo, 16 20121 Milan<br>
+          <br>
+          Paris: January 17th - 22nd<br>
+          46, Rue du Vertbois. 75003 Paris<br>
         </p>
       </nav>
       <main>
