@@ -133,6 +133,12 @@ input[type='checkbox'] {
   max-height: 200px;
 }
 
+.toggle2:checked + .lbl-toggle + .collapsible-content {
+  max-height: 200px;
+}
+
+
+
 body {
   font-family: aktiv-grotesk, sans-serif;
   color: #000;
@@ -303,6 +309,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .love-live-style-payoff {
   max-width: 700px;
   width: 100%;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
 }
 
 .slick-next { right: 0; z-index: 1; } .slick-prev { left: 0; z-index: 1; }

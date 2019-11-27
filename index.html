@@ -56,31 +56,6 @@
             <a class="nav-link" href="/#contact">Contact</a>
         </div>
 
-        <div class="campaign-text" style="text-align: right; font-size: 16px;  align-self: baseline !important;">
-      <input id="collapsible" class="toggle" type="checkbox">
-      <label for="collapsible" class="lbl-toggle"><b>PRE-FW '20</b></label>
-      <div class="collapsible-content">
-        <div class="content-inner">
-          <p>
-            Milan: January 14th - February 8th<br>  
-            Via Palermo, 16 20121 Milan<br><br>
-            Paris: January 17th - 22nd<br>
-            46, Rue du Vertbois. 75003 Paris 
-          </p>
-        </div>
-      </div>
-        <input id="collapsible2" class="toggle" type="checkbox">
-        <label for="collapsible2" class="lbl-toggle"><b>MAIN FW '20</b></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            Milan: February 18th - March 15th <br> 
-            Via Palermo, 16 20121 Milan <br><br>
-            Paris: February 28th - March 4th <br>
-            Espace Commines - 17 Rue Commines. 75003 Paris
-          </div>
-        </div>
-      </div>
-
 
         <!-- <p id="campaign-text-long" class="campaign-text" style="text-align: right;  align-self: baseline !important;">
           <b>PRE SS 20</b><br>
@@ -98,6 +73,31 @@
 
       </div>
     </nav>
+
+    <div class="campaign-text" style="margin-top: 40px; right: 32px; padding-bottom: 32px; position:absolute; text-align: right; font-size: 16px; z-index: 1000000;">
+      <input name="PRE-FW" id="collapsible" class="toggle" type="checkbox">
+      <label for="collapsible" class="lbl-toggle"><b>PRE-FW '20</b></label>
+      <div class="collapsible-content collapsible-1">
+        <div class="content-inner">
+          <p>
+            Milan: January 14th - February 8th<br>  
+            Via Palermo, 16 20121 Milan<br><br>
+            Paris: January 17th - 22nd<br>
+            46, Rue du Vertbois. 75003 Paris 
+          </p>
+        </div>
+      </div>
+        <input name="MAIN FW" id="collapsible2" class="toggle2" type="checkbox">
+        <label for="collapsible2" class="lbl-toggle"><b>MAIN FW '20</b></label>
+        <div class="collapsible-content collapsible-2">
+          <div class="content-inner">
+            Milan: February 18th - March 15th <br> 
+            Via Palermo, 16 20121 Milan <br><br>
+            Paris: February 28th - March 4th <br>
+            Espace Commines - 17 Rue Commines. 75003 Paris
+          </div>
+        </div>
+      </div>
 
 
     <nav class="navbar-menu mobile-nav" id="MobileNav">
@@ -220,7 +220,7 @@
                 <img class="love-live-style-payoff p-t-xl" style="max-width: 700px;" src="img/love-live-style.svg"
                   alt="love live style">
 
-                <div class="columns" style="padding-top: 50px;">
+                <div class="columns" style="padding-top: 60px;">
                   <div class="column" style="display: flex; justify-content: center;">
                     <img class="hover-image-1" src="img/brand-listing/3x1-austin-crop-jean.jpg"
                       alt="3x1 - Austin Crop jean" style="align-self: center">
@@ -303,12 +303,6 @@
                     </a>
                   </div>
 
-                  <div class="swiper-slide">
-                    <a href="/give-me-space">
-
-                      <img src="img/brand-listing/gms-hoodie-statement.jpg" alt="GIVE ME SPACE - hoodie Statement ">
-                    </a>
-                  </div>
                   <div class="swiper-slide">
                     <a href="/give-me-space">
 
@@ -822,6 +816,30 @@
         }
       });
 
+      $('input.toggle').click(
+        function () {
+          $('.collapsible-content.collapsible-1').toggleClass('active'); 
+        }
+      )
+
+      $('input.toggle2').click(
+        function () {
+          $('.collapsible-content.collapsible-2').toggleClass('active'); 
+        }
+      )
+
+      var interval = setInterval(DoSomething, 100);
+
+      function DoSomething() {
+        if ($('.collapsible-content').hasClass('active'))
+        {
+          $('.love-live-style-payoff').css('opacity','0');
+        }
+        else {
+          $('.love-live-style-payoff').css('opacity','1');
+        }
+    };
+
       $('li.brand-listing a').hover(
         function () {
           $(this).parent().addClass('hover');
@@ -869,6 +887,13 @@
         }
       );
 
+      $('#services-list li').hover(
+        function () {
+          $('#services-list li').removeClass('active');
+          $(this).addClass('active');
+        }
+      );
+
       $('#production').hide();
 
       $('#showroom').hide();
@@ -881,8 +906,8 @@
 
       $('#distribution-logo').hide();
 
-      $('#communication-toggle').click(
-        function () {
+      $('#communication-toggle').mouseover(
+        function () { 
           $('#showroom').hide();
           $('#production').hide();
           $('#distribution').hide();
@@ -893,7 +918,7 @@
           $('#communication-logo').fadeIn(600);
         })
 
-      $('#showroom-toggle').click(
+      $('#showroom-toggle').mouseover(
         function () {
           $('#communication').hide();
           $('#distribution').hide();
@@ -903,6 +928,42 @@
           $('#production-logo').hide();
           $('#showroom').fadeIn();
           $('#showroom-logo').fadeIn(600);
+        })
+
+      $('#distribution-toggle').mouseover(
+        function () {
+          $('#communication').hide();
+          $('#showroom').hide();
+          $('#production').hide();
+          $('#communication-logo').hide();
+          $('#showroom-logo').hide();
+          $('#production-logo').hide();
+          $('#distribution').fadeIn();
+          $('#distribution-logo').fadeIn(600);
+        })
+
+      $('#production-toggle').mouseover(
+        function () {
+          $('#communication').hide();
+          $('#distribution').hide();
+          $('#showroom').hide();
+          $('#communication-logo').hide();
+          $('#distribution-logo').hide();
+          $('#showroom-logo').hide();
+          $('#production').fadeIn();
+          $('#production-logo').fadeIn(600);
+        })
+
+      $('#communication-toggle').click(
+        function () { 
+          $('#showroom').hide();
+          $('#production').hide();
+          $('#distribution').hide();
+          $('#showroom-logo').hide();
+          $('#production-logo').hide();
+          $('#distribution-logo').hide();
+          $('#communication').fadeIn(600);
+          $('#communication-logo').fadeIn(600);
         })
 
       $('#distribution-toggle').click(
