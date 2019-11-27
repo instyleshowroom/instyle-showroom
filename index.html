@@ -828,9 +828,9 @@
         }
       )
 
-      var interval = setInterval(DoSomething, 100);
+      var interval = setInterval(hidePayoff, 100);
 
-      function DoSomething() {
+      function hidePayoff() {
         if ($('.collapsible-content').hasClass('active'))
         {
           $('.love-live-style-payoff').css('opacity','0');
