@@ -39,62 +39,92 @@
   <div id="swup">
     <div class="transition-fade">
       <!-- Navigation -->
-      <nav class="navbar is-transparent is-fixed-top" aria-label="main navigation">
-        <div class="container is-fluid" style="display: flex; justify-content: space-between;">
-          <div class="logo">
-            <a href="/">
-              <img src="img/instyle-logo.svg" alt="logo" width="146">
-            </a>
-          </div>
-
-          <div class="navigation-links">
-
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/#about">About</a>
-            <a class="nav-link" href="/#services">Services</a>
-            <a class="nav-link" href="/#gallery">Gallery</a~>
-              <a class="nav-link" href="/#contact">Contact</a>
-          </div>
-
-
-          <!-- <p id="campaign-text-long" class="campaign-text" style="text-align: right;  align-self: baseline !important;">
-            <b>PRE SS 20</b><br>
-            Milan - Via Palermo, 16, 20121 Milan<br>
-            June 10th - July 12th 2019<br>
-            <br>
-            Paris - Rue du Faubourg St-Honore, 85, 75008 Paris
-            <br>June 21st - 26th 2019<br>
-          </p> -->
-          <a role="button" class="navbar-burger burger" data-target="mobileNav" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+    <nav class="navbar is-transparent is-fixed-top" aria-label="main navigation">
+      <div class="container is-fluid" style="display: flex; justify-content: space-between;align-items: top;">
+        <div class="logo">
+          <a href="/">
+            <img src="img/instyle-logo.svg" alt="logo" width="146">
           </a>
-
         </div>
-      </nav>
 
-      <p id="campaign-text-short" class="campaign-text-home"
-        style="text-align: right;  align-self: baseline !important;">
-        <b>PRE SS 20</b><br>
-        Milan - June 10th - July 12th <br>
-        Paris - June 21st - June 26th <br>
-      </p>
+        <div class="navigation-links">
+
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/#about">About</a>
+          <a class="nav-link" href="/#services">Services</a>
+          <a class="nav-link" href="/#gallery">Gallery</a~>
+            <a class="nav-link" href="/#contact">Contact</a>
+        </div>
 
 
-      <nav class="navbar-menu mobile-nav" id="MobileNav">
-        <a class="navbar-item" href="/">HOME</a>
-        <a class="navbar-item" href="/#about">ABOUT</a>
-        <a class="navbar-item" href="/#services">SERVICES</a>
-        <a class="navbar-item" href="/#gallery">GALLERY</a>
-        <a class="navbar-item" href="/#contact">CONTACT</a>
-        <p class="has-text-black p-b-lg has-text-left is-size-6 is-font-weight-medium"
-          style="bottom: 0; position: absolute;">
+        <!-- <p id="campaign-text-long" class="campaign-text" style="text-align: right;  align-self: baseline !important;">
           <b>PRE SS 20</b><br>
-          Milano - June 10th - July 12th <br>
-          Paris - June 21st - June 26th <br>
+          Milan - Via Palermo, 16, 20121 Milan<br>
+          June 10th - July 12th 2019<br>
+          <br>
+          Paris - Rue du Faubourg St-Honore, 85, 75008 Paris
+          <br>June 21st - 26th 2019<br>
+        </p> -->
+        <a role="button" class="navbar-burger burger" data-target="mobileNav" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </nav>
+
+    <div class="campaign-text" style="margin-top: 40px; right: 32px; padding-bottom: 32px; position:absolute; text-align: right; font-size: 16px; z-index: 1000000;">
+      <input name="PRE-FW" id="collapsible" class="toggle" type="checkbox">
+      <label for="collapsible" class="lbl-toggle"><b>PRE-FW '20</b></label>
+      <div class="collapsible-content collapsible-1">
+        <div class="content-inner">
+          <p>
+            Milan: January 14th - February 8th<br>  
+            Via Palermo, 16 20121 Milan<br><br>
+            Paris: January 17th - 22nd<br>
+            46, Rue du Vertbois. 75003 Paris 
+          </p>
+        </div>
+      </div>
+        <input name="MAIN FW" id="collapsible2" class="toggle2" type="checkbox">
+        <label for="collapsible2" class="lbl-toggle"><b>MAIN FW '20</b></label>
+        <div class="collapsible-content collapsible-2">
+          <div class="content-inner">
+            Milan: February 18th - March 15th <br> 
+            Via Palermo, 16 20121 Milan <br><br>
+            Paris: February 28th - March 4th <br>
+            Espace Commines - 17 Rue Commines. 75003 Paris
+          </div>
+        </div>
+      </div>
+
+
+    <nav class="navbar-menu mobile-nav" id="MobileNav">
+      <a class="navbar-item" href="/">HOME</a>
+      <a class="navbar-item" href="/#about">ABOUT</a>
+      <a class="navbar-item" href="/#services">SERVICES</a>
+      <a class="navbar-item" href="/#gallery">GALLERY</a>
+      <a class="navbar-item" href="/#contact">CONTACT</a>
+      <div class="has-text-black p-b-lg has-text-left is-size-7 is-font-weight-medium"
+        style="bottom: 0; position: absolute;">
+      <label for="collapsible" class="lbl-toggle"><b>PRE-FW '20</b></label>
+          <p>
+            Milan: January 14th - February 8th<br>  
+            Via Palermo, 16 20121 Milan<br><br>
+            Paris: January 17th - 22nd<br>
+            46, Rue du Vertbois. 75003 Paris 
+          </p>
+
+        <label for="collapsible2" class="lbl-toggle"><b>MAIN FW '20</b></label>
+        <p>
+          Milan: February 18th - March 15th <br> 
+          Via Palermo, 16 20121 Milan <br><br>
+          Paris: February 28th - March 4th <br>
+          Espace Commines - 17 Rue Commines. 75003 Paris
         </p>
-      </nav>
+      </div>
+    </nav>
       <main>
 
         <div id="home" class="hero is-fullheight brand-hero">
@@ -129,19 +159,6 @@
                       data-alt-1="FORTE DEI MARMI COUTURE - clothing"
                       data-alt-2="FORTE DEI MARMI COUTURE - Denim jacket">Forte Dei Marmi Couture</a>
                   </li>
-
-                  <li class="brand-listing">
-                    <a href="/give-me-space" data-hover-1="img/brand-listing/gms-hoodie-statement.jpg"
-                      data-hover-2="img/brand-listing/gms-hoodie-statement-sweater-space.jpg"
-                      data-alt-1="GIVE ME SPACE - hoodie Statement "
-                      data-alt-2="GIVE ME SPACE - hoodie Statement sweater Space crew neck ">Give Me Space</a>
-                  </li>
-
-                  <li class="brand-listing">
-                    <a href="/good-hyouman" data-hover-1="img/brand-listing/goy-pullover-june-distressed.jpg"
-                      data-hover-2="img/brand-listing/goy-bra-paltrow-sports.jpg"
-                      data-alt-1="GOOD HYOUMAN - pullover June distressed"
-                      data-alt-2="GOOD HYOUMAN - bra Paltrow sports">good hYouman</a></li>
 
                   <li class="brand-listing">
                     <a href="/hebe-studio" data-hover-1="img/brand-listing/hebe-suit.jpg"
@@ -197,7 +214,7 @@
                 <img class="love-live-style-payoff p-t-xl" style="max-width: 700px;" src="img/love-live-style.svg"
                   alt="love live style">
 
-                <div class="columns" style="padding-top: 50px;">
+                <div class="columns" style="padding-top: 60px;">
                   <div class="column" style="display: flex; justify-content: center;">
                     <img class="hover-image-1" src="img/brand-listing/3x1-austin-crop-jean.jpg"
                       alt="3x1 - Austin Crop jean" style="align-self: center">
@@ -277,33 +294,6 @@
                   <div class="swiper-slide">
                     <a href="/forte-dei-marmi-couture">
                       <img src="img/brand-listing/fdmc-denim-jacket.jpg" alt="FORTE DEI MARMI COUTURE - Denim jacket">
-                    </a>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <a href="/give-me-space">
-
-                      <img src="img/brand-listing/gms-hoodie-statement.jpg" alt="GIVE ME SPACE - hoodie Statement ">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="/give-me-space">
-
-                      <img src="img/brand-listing/gms-hoodie-statement-sweater-space.jpg"
-                        alt="GIVE ME SPACE - hoodie Statement sweater Space crew neck ">
-                    </a>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <a href="/good-hyouman">
-                      <img src="img/brand-listing/goy-pullover-june-distressed.jpg"
-                        alt="GOOD HYOUMAN - tank Aguiler muscle legging Jaelynne">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="/good-hyouman">
-                      <img src="img/brand-listing/goy-bra-paltrow-sports.jpg" alt="GOOD HYOUMAN - bra Paltrow sports">
                     </a>
                   </div>
 
@@ -562,20 +552,6 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="/give-me-space">
-                <div class="caption">Give me space</div>
-                <img class="swiper-lazy" data-src="img/carousel/gms-bomber-jacket.jpg"
-                  src="img/carousel/gms-bomber-jacket.jpg" alt="GIVE ME SPACE - Bomber jacket ">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/good-hyouman">
-                <div class="caption">good hYouman</div>
-                <img class="swiper-lazy" data-src="img/carousel/goy-tank-piper-crop-cut-off.jpg"
-                  src="img/carousel/goy-tank-piper-crop-cut-off.jpg" alt="GOOD HYOUMAN - tank Piper crop cut off">
-              </a>
-            </div>
-            <div class="swiper-slide">
               <a href="/hebe-studio">
                 <div class="caption">Hebe Studio</div>
                 <img class="swiper-lazy" data-src="img/carousel/hebe-jacket-bianca.jpg"
@@ -799,6 +775,30 @@
         }
       });
 
+      $('input.toggle').click(
+        function () {
+          $('.collapsible-content.collapsible-1').toggleClass('active'); 
+        }
+      )
+
+      $('input.toggle2').click(
+        function () {
+          $('.collapsible-content.collapsible-2').toggleClass('active'); 
+        }
+      )
+
+      var interval = setInterval(hidePayoff, 100);
+
+      function hidePayoff() {
+        if ($('.collapsible-content').hasClass('active'))
+        {
+          $('.love-live-style-payoff').css('opacity','0');
+        }
+        else {
+          $('.love-live-style-payoff').css('opacity','1');
+        }
+    };
+
       $('li.brand-listing a').hover(
         function () {
           $(this).parent().addClass('hover');
@@ -846,6 +846,13 @@
         }
       );
 
+      $('#services-list li').hover(
+        function () {
+          $('#services-list li').removeClass('active');
+          $(this).addClass('active');
+        }
+      );
+
       $('#production').hide();
 
       $('#showroom').hide();
@@ -858,8 +865,8 @@
 
       $('#distribution-logo').hide();
 
-      $('#communication-toggle').click(
-        function () {
+      $('#communication-toggle').mouseover(
+        function () { 
           $('#showroom').hide();
           $('#production').hide();
           $('#distribution').hide();
@@ -870,7 +877,7 @@
           $('#communication-logo').fadeIn(600);
         })
 
-      $('#showroom-toggle').click(
+      $('#showroom-toggle').mouseover(
         function () {
           $('#communication').hide();
           $('#distribution').hide();
@@ -880,6 +887,42 @@
           $('#production-logo').hide();
           $('#showroom').fadeIn();
           $('#showroom-logo').fadeIn(600);
+        })
+
+      $('#distribution-toggle').mouseover(
+        function () {
+          $('#communication').hide();
+          $('#showroom').hide();
+          $('#production').hide();
+          $('#communication-logo').hide();
+          $('#showroom-logo').hide();
+          $('#production-logo').hide();
+          $('#distribution').fadeIn();
+          $('#distribution-logo').fadeIn(600);
+        })
+
+      $('#production-toggle').mouseover(
+        function () {
+          $('#communication').hide();
+          $('#distribution').hide();
+          $('#showroom').hide();
+          $('#communication-logo').hide();
+          $('#distribution-logo').hide();
+          $('#showroom-logo').hide();
+          $('#production').fadeIn();
+          $('#production-logo').fadeIn(600);
+        })
+
+      $('#communication-toggle').click(
+        function () { 
+          $('#showroom').hide();
+          $('#production').hide();
+          $('#distribution').hide();
+          $('#showroom-logo').hide();
+          $('#production-logo').hide();
+          $('#distribution-logo').hide();
+          $('#communication').fadeIn(600);
+          $('#communication-logo').fadeIn(600);
         })
 
       $('#distribution-toggle').click(

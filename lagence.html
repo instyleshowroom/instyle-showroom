@@ -27,9 +27,9 @@
   <div class="transition-fade">
     <!-- Navigation -->
     <nav class="navbar is-transparent is-fixed-top" aria-label="main navigation">
-      <div class="container is-fluid" style="display: flex; justify-content: space-between;">
+      <div class="container is-fluid" style="display: flex; justify-content: space-between;align-items: top;">
         <div class="logo">
-          <a href="/index.html">
+          <a href="/">
             <img src="img/instyle-logo.svg" alt="logo" width="146">
           </a>
         </div>
@@ -40,13 +40,20 @@
           <a class="nav-link" href="/#about">About</a>
           <a class="nav-link" href="/#services">Services</a>
           <a class="nav-link" href="/#gallery">Gallery</a~>
-            <a class="nav-link" href="/index.html#contact">Contact</a>
+            <a class="nav-link" href="/#contact">Contact</a>
         </div>
-        <p class="campaign-text" style="text-align: right;  align-self: baseline !important;">
+
+        
+
+
+        <!-- <p id="campaign-text-long" class="campaign-text" style="text-align: right;  align-self: baseline !important;">
           <b>PRE SS 20</b><br>
-          Milano - June 10th - July 12th <br>
-          Paris - June 21st - June 26th <br>
-        </p>
+          Milan - Via Palermo, 16, 20121 Milan<br>
+          June 10th - July 12th 2019<br>
+          <br>
+          Paris - Rue du Faubourg St-Honore, 85, 75008 Paris
+          <br>June 21st - 26th 2019<br>
+        </p> -->
         <a role="button" class="navbar-burger burger" data-target="mobileNav" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -56,18 +63,31 @@
       </div>
     </nav>
 
-        <nav class="navbar-menu mobile-nav" id="MobileNav">
+
+    <nav class="navbar-menu mobile-nav" id="MobileNav">
       <a class="navbar-item" href="/">HOME</a>
       <a class="navbar-item" href="/#about">ABOUT</a>
       <a class="navbar-item" href="/#services">SERVICES</a>
       <a class="navbar-item" href="/#gallery">GALLERY</a>
-      <a class="navbar-item" href="/index.html#contact">CONTACT</a>
-      <p class="has-text-black p-b-lg has-text-left is-size-6 is-font-weight-medium"
+      <a class="navbar-item" href="/#contact">CONTACT</a>
+      <div class="has-text-black p-b-lg has-text-left is-size-7 is-font-weight-medium"
         style="bottom: 0; position: absolute;">
-        <b>PRE SS 20</b><br>
-        Milano - June 10th - July 12th <br>
-        Paris - June 21st - June 26th <br>
-      </p>
+      <label for="collapsible" class="lbl-toggle"><b>PRE-FW '20</b></label>
+          <p>
+            Milan: January 14th - February 8th<br>  
+            Via Palermo, 16 20121 Milan<br><br>
+            Paris: January 17th - 22nd<br>
+            46, Rue du Vertbois. 75003 Paris 
+          </p>
+
+        <label for="collapsible2" class="lbl-toggle"><b>MAIN FW '20</b></label>
+        <p>
+          Milan: February 18th - March 15th <br> 
+          Via Palermo, 16 20121 Milan <br><br>
+          Paris: February 28th - March 4th <br>
+          Espace Commines - 17 Rue Commines. 75003 Paris
+        </p>
+      </div>
     </nav>
 
     <main>
@@ -85,7 +105,7 @@
                 influence. Since the brand’s inception in 2008, the California-based label has maintained its identity
                 while
                 using luxury fabrics and modern designs to produce timeless ready-to-wear for women. <br>
-                <b>Designed to inspire your life: a California lifestyle, with a French attitude.</b>
+                Designed to inspire your life: a California lifestyle, with a French attitude.
               </p>
             </div>
             <img src="img/brands/lagence-denim-jeans-margot.jpg" style="z-index: 10; grid-column: 7 / span 4; grid-row: 3 / span 8;"
@@ -132,7 +152,7 @@
               influence. Since the brand’s inception in 2008, the California-based label has maintained its identity
               while
               using luxury fabrics and modern designs to produce timeless ready-to-wear for women. <br>
-              <b>Designed to inspire your life: a California lifestyle, with a French attitude.</b>
+              Designed to inspire your life: a California lifestyle, with a French attitude.
           </p>
           <img class="img-fluid" style="max-width: 250px;" src="img/brands/lagence-denim-jeans-margot.jpg" alt="L'AGENCE - denim jeans Margot">
         </div>
