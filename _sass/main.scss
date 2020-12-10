@@ -167,6 +167,11 @@ h1 {
   font-family: 'playfair display', serif;
 }
 
+.lock-scroll {
+  overflow: hidden;
+  height: 0;
+}
+
 #brand-list {
   font-size: 40px;
   font-family: 'playfair display', serif;
@@ -266,7 +271,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   padding-left: 52px;
   opacity: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   overflow-y: hidden;
   top:0;
