@@ -622,15 +622,15 @@
   <script src="lib/main.js"></script>
   <script>
 
-    window.addEventListener('load', function() {
-      var hoverImages = document.querySelectorAll('.brand-listing a');
-      hoverImages.forEach(function(image) {
-        var img = new Image();
-        img.src = image.getAttribute('data-hover-1');
-        img.src = image.getAttribute('data-hover-2');
-      });
-    });
-
+window.addEventListener('load', function() {
+  var hoverImages = document.querySelectorAll('.brand-listing a');
+  hoverImages.forEach(function(image) {
+    var img1 = new Image();
+    var img2 = new Image();
+    img1.src = image.getAttribute('data-hover-1');
+    img2.src = image.getAttribute('data-hover-2');
+  });
+});
 
 
     if ('ontouchstart' in document) {
